@@ -54,8 +54,8 @@ public class App {
         //deleteCitoyen.deleteCitoyen("Paysan", 200);
 
         // Modifier la quantité d'un citoyen
-        GestionCitoyens updateCitoyen = new GestionCitoyens(database, "Citoyens");
-        updateCitoyen.updateCitoyen("Soldat", "protection", 600);
+        //GestionCitoyens updateCitoyen = new GestionCitoyens(database, "Citoyens");
+        //updateCitoyen.updateCitoyen("Soldat", "protection", 600);
 
         // Fermer la connexion
         connexion.fermerConnexion();
