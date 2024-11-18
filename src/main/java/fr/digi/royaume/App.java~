@@ -38,8 +38,8 @@ public class App {
 
 //-------------------Gestion des citoyens------------------
         // Ajout d'un citoyen
-        //GestionCitoyens addCitoyen = new GestionCitoyens(database, "Citoyens");
-        //addCitoyen.ajouterCitoyen("Soldat", "protection", 1000);
+        GestionCitoyens addCitoyen = new GestionCitoyens(database, "Citoyens");
+        addCitoyen.ajouterCitoyen("Soldat", "protection", 1000);
 
         // Affiche tous les citoyens
         //GestionCitoyens citoyens = new GestionCitoyens(database, "Citoyens");
@@ -55,7 +55,7 @@ public class App {
 
         // Modifier la quantité d'un citoyen
         GestionCitoyens updateCitoyen = new GestionCitoyens(database, "Citoyens");
-        updateCitoyen.updateCitoyen("Soldat", "protection", 600);
+        updateCitoyen.updateCitoyen("Soldat", "protection", 800);
 
         // Fermer la connexion
         connexion.fermerConnexion();

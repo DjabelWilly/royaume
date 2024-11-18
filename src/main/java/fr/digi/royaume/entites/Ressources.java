@@ -1,4 +1,4 @@
-package fr.digi.royaume;
+package fr.digi.royaume.entites;
 
 public class Ressources {
     private String type;
@@ -9,7 +9,7 @@ public class Ressources {
         this.quantite = quantite;
     }
 
-    public void afficherDetails() {
+    public void afficherRessources() {
         System.out.println("Ressource: " + type + ", Quantité: " + quantite);
     }
 }

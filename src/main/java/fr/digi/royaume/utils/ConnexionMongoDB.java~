@@ -4,6 +4,21 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
+/*public class ConnexionMongoDB {
+
+    private MongoDatabase database;
+
+    public static void connectMongoDB() {
+
+        try (MongoClient mongoClient = MongoClients.create("mongodb+srv://djabelwilly:djabelwilly@cluster0.7fmrshj.mongodb.net/Royaume")) {
+            database = mongoClient.getDatabase("Royaume");
+            System.out.println("Connexion à la base de donnée " + database.getName() + " réussie.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}*/
+
 public class ConnexionMongoDB {
 
     private MongoClient mongoClient;

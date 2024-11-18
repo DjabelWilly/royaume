@@ -37,15 +37,4 @@ public class GestionRessources {
         collection.updateOne(new Document("type", type), new Document("$set", new Document("quantite", nouvelleQuantite)));
         System.out.println("Ressource modifiée: " + type + ", nouvelle quantité: " + nouvelleQuantite);
     }
-
-    // Methode pour afficher le totale d'une ressource
-    public int totalRessource(String type) {
-        int total = 0;
-        for (Document ressource : collection.find()) {
-            if (ressource.getString("type").equals(type)) {
-                total += ressource.getInteger("quantite");
-            }
-        }
-        return total;
-    }
 }

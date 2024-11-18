@@ -62,7 +62,7 @@ public class GestionCitoyens {
         }
         if (collection.countDocuments(new Document("type", type)) > 0) {
             collection.updateOne(new Document("type", type), new Document("$set", new Document("quantite", quantite)));
-            System.out.println("La quantité du citoyen " + type + " a été modifiée à " + quantite);
+            System.out.println("La quantité du citoyen " + type + " a été modifiée");
 
         }
 

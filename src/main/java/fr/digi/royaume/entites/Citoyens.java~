@@ -1,4 +1,4 @@
-package fr.digi.royaume.entites;
+package fr.digi.royaume;
 
 public class Citoyens {
 
@@ -12,7 +12,7 @@ public class Citoyens {
         this.role = role;
     }
 
-    public void afficherCitoyens() {
+    public void afficherDetails() {
         System.out.println("Citoyen: " + type + ", quantité: " + quantite + "rôle: " + role);
     }
 
